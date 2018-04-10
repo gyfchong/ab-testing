@@ -1,6 +1,6 @@
 {
-  "name": "ab-testing",
-  "version": "3.1.0",
+  "name": "blue-red-testing",
+  "version": "1.0.0",
   "description": "A/B testing made easy.",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/xavimb/ab-testing.git"
+    "url": "https://github.com/gyfchong/blue-red-testing.git"
   },
   "keywords": [
     "ab-testing",
@@ -19,12 +19,12 @@
     "split-testing",
     "split"
   ],
-  "author": "Xavi Magrinyà",
+  "author": "Geoffrey Chong",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/xavimb/ab-testing/issues"
+    "url": "https://github.com/gyfchong/blue-red-testing/issues"
   },
-  "homepage": "https://github.com/xavimb/ab-testing",
+  "homepage": "https://github.com/gyfchong/blue-red-testing",
   "devDependencies": {
     "chai": "^1.10.0",
     "mocha": "^2.0.1",
