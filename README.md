@@ -1,11 +1,6 @@
-ab-testing
+blue-red-testing
 ==========
-
-[![Build Status](https://travis-ci.org/xavimb/ab-testing.svg?branch=master)](https://travis-ci.org/xavimb/ab-testing)
-[![Latest Stable Version](https://img.shields.io/npm/v/ab-testing.svg)](https://www.npmjs.com/package/ab-testing)
-[![License](https://img.shields.io/npm/l/ab-testing.svg)](https://raw.githubusercontent.com/xavimb/ab-testing/master/LICENSE)
-
-A/B testing made easy.
+A/B testing made easy. (modified version of [ab-testing](https://www.npmjs.com/package/ab-testing) package by [@xavimb](https://github.com/xavimb))
 
 ## Install
 
@@ -21,10 +16,12 @@ var testObject = ABTesting.createTest('firstTest', 	// This name has to be uniqu
 	{
 		name: 'A',
 		weight: 0.1 	// If not set, the default value is 0.5
+		outcome: true // The value returned if the user is in this bucket (can be anything)
 	},
 	{
 		name: 'B',
 		weight: 0.9
+		outcome: false
 	}
 ]);
 ```
@@ -46,15 +43,8 @@ var testName = testObject.getName();
 ## A/B Test
 
 ```
-// Executes the corresponding function for the given group
-testObject.test(testGroup, [
-	function () {
-		// Test A code here
-	},
-	function() {
-		// Test B code here
-	}
-], this);
+// Executes the test and returns the outcome for the given user
+testObject.test(testGroup, this);
 ```
 
 ## Useful usage tips
