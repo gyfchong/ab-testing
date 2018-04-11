@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/gyfchong/blue-red-testing",
   "devDependencies": {
-    "chai": "^4.1.2",
+    "chai": "^1.10.0",
     "mocha": "^5.0.5",
     "mongoose": "^5.0.14",
     "underscore": "^1.7.0"
